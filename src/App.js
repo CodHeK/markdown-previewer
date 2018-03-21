@@ -29,7 +29,7 @@ class App extends Component {
               <FormControl componentClass="textarea" style={{ height: '670px'}} placeholder="Type in your markdown" value={markdown} onChange={ (event) => this.updateMarkDown(event.target.value) }></FormControl>
             </FormGroup>
           </div>
-          <div className="col-lg-6 col-md-6" style = {{ textAlign: 'left' }}>
+          <div className="col-lg-6 col-md-6" style = {{ textAlign: 'left', fontFamily: 'Montserrat' }}>
             <div dangerouslySetInnerHTML = {{ __html : marked(markdown) }}></div>
           </div>
         </div>

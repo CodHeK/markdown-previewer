@@ -22,17 +22,15 @@ class App extends Component {
     let { markdown } = this.state;
     console.log(markdown);
     return (
-      <div className="App container">
-        <div>
-          <FormGroup controlId="formControlIsTextarea">
-            <ControlLabel>Markdown Input</ControlLabel>
-            <FormControl componentClass="textarea" placeholder="Type in your markdown" value={markdown} onChange={ (event) => this.updateMarkDown(event.target.value) }></FormControl>
-          </FormGroup>
-        </div>
-        <div>
-          <h1>Markdown Output</h1>
-          <div dangerouslySetInnerHTML = {{ __html : marked(markdown) }}>
-            
+      <div className="App fluid-container">
+        <div className="row">
+          <div className="col-lg-6 col-md-6">
+            <FormGroup controlId="formControlIsTextarea">
+              <FormControl componentClass="textarea" style={{ height: '670px'}} placeholder="Type in your markdown" value={markdown} onChange={ (event) => this.updateMarkDown(event.target.value) }></FormControl>
+            </FormGroup>
+          </div>
+          <div className="col-lg-6 col-md-6" style = {{ textAlign: 'left' }}>
+            <div dangerouslySetInnerHTML = {{ __html : marked(markdown) }}></div>
           </div>
         </div>
       </div>

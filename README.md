@@ -5,4 +5,4 @@ Simple app that lets you view your markdown on the go as you edit. Change are di
 
 ![ss](ss.png)
 
-### Try out the App here -> [https://markdown-pre.herokuapp.com/][https://markdown-pre.herokuapp.com/]
+#### Try out the App here -> [https://markdown-pre.herokuapp.com/]

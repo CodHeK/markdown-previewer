@@ -1,5 +1,5 @@
 # milo
-Lightining fast markdown editor where-in you can view your markdown output instantly as you edit.
+Lightning fast markdown editor where-in you can view your markdown output instantly as you edit.
 
 ### How it looks :
 
